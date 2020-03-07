@@ -25,7 +25,7 @@ var olContact = getById("contact");
 /*-----------------Pop Up configuration Ends-----------------*/
 
 function showPopUp(e) {
-    document.body.style.overflowY = "hidden";
+    
     var obj = data[e.target.value.toLowerCase()];
 
     if (obj.rules == undefined) {
@@ -67,7 +67,7 @@ function showPopUp(e) {
     btnRegister.addEventListener('click', _ => {
         window.open(btnRegister.value);
     })
-
+    document.body.style.overflowY = "hidden";
     popUp.classList.remove("hide");
 }
 
