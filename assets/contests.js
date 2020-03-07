@@ -1,8 +1,7 @@
-const data = [
-    {
-        eventName: "Droidblitz",
+const data = {
+    droidblitz : {
         description: "ESPERANZA, in association with the CGEC Student  presents Sandrover for the participants of ESPERANZA CHAPTER 3.Droid Blitz is a double-elimination event that requires participants to build wireless-remote controlled electric-powered robots that can be used to complete broken pathways and transfer packages by running on land as well as water terrains. Build an amphibious robot that can be used to perform tasks on land and water and traverse across uneven terrains.It’s the time to wake up “guess” in you.​",
-        videoURL: "/videos/contest videos/droidblitz.mp4",
+        videoURL: "https://www.youtube.com/embed/1U1RHWBUoRY?modestbranding=1&autoplay=1&showinfo=0&controls=0",
         prizeMoney: 5000,
         rules: [
             "You have to made this bot Wirelessly.",
@@ -32,10 +31,9 @@ const data = [
             }
         ]
     },
-    {
-        eventName: "Robo Soccer",
+    robosoccer : {
         description: "This is the turning point in the soccer game. In the spirit of the old fashioned board games and by taking a step forward, we have exchanged the tabletop game for the team of robot players connected with an app on a durable soccer pitch. The goal is no different from a regular soccer match: to attack, defend, strategize, and score more goals than your opponent.",
-        // videoURL: "/videos/contest videos/robosoccer.mp4",
+        videoURL: "https://www.youtube.com/embed/6IXIIATWH0g?modestbranding=1&autoplay=1&showinfo=0&controls=0",
         prizeMoney: 5000,
         rules: [
             "You have to made the bot wirelessly/wired as your wish ...",
@@ -53,10 +51,9 @@ const data = [
             }
         ]
     },
-    {
-        eventName: "Sand Rover",
+    sandrover : {
         description: "ESPERANZA, in association with the CGEC Student  presents Sandrover for the participants of ESPERANZA CHAPTER 3. Sand Rover is the ultimate designing challenge for you to showcase your  technical skills. It’s the time to wake up “guess” in you. ",
-        videoURL: "/videos/contest videos/sandrover.mp4",
+        videoURL: "https://www.youtube.com/embed/2kMi6MfmGM8?modestbranding=1&autoplay=1&showinfo=0&controls=0",
         prizeMoney: 5000,
         rules: [
             "You have to make the bot Wireless.",
@@ -86,10 +83,9 @@ const data = [
             }
         ]
     },
-    {
-        eventName: "Arm of Achelous",
+    armofachelous : {
         description: "ESPERANZA, in association with the CGEC Student  presents Sandrover for the participants of ESPERANZA CHAPTER 3. Sand Rover is the ultimate designing challenge for you to showcase your  technical skills. It’s the time to wake up “guess” in you. ",
-        videoURL: "/videos/contest videos/arm of achelous.mp4",
+        videoURL: "https://www.youtube.com/embed/VgQsJVhB4Lk?modestbranding=1&autoplay=1&showinfo=0&controls=0",
         prizeMoney: 5000,
         rules: [
             "You have to make the bot Wireless.",
@@ -119,10 +115,10 @@ const data = [
             }
         ]
     },
-    {
+    lawsofmotion : {
         eventName: "Laws of Motion",
         description: "ESPERANZA, in association with the CGEC Student  presents Laws of Motion for the participants of ESPERANZA CHAPTER 3. Laws 0f Motion is the ultimate designing challenge for you to showcase your  technical skills. It’s the time to wake up “guess” in you. ",
-        // videoURL: "/videos/contest videos/arm of achelous.mp4",
+        videoURL: "https://www.youtube.com/embed/2kMi6MfmGM8?modestbranding=1&autoplay=1&showinfo=0&controls=0",
         prizeMoney: "10,000/-",
         rules: [
             "You have to make the bot Wireless.",
@@ -148,10 +144,9 @@ const data = [
             }
         ]
     },
-    {
-        eventName: "Math Olympiad",
+    matholympiad : {
         description: "The contest aims to foster an interest in math and improve the mathematical skills of participants through solo competitions. Give your solution with extensive knowledge pertaining a problem.",
-        // videoURL: "/videos/contest videos/math.mkv",
+        videoURL: "https://www.youtube.com/embed/2kMi6MfmGM8?modestbranding=1&autoplay=1&showinfo=0&controls=0",
         prizeMoney: "1,000/-",
         certificate: true,
         entryFee: 30,
@@ -185,4 +180,4 @@ const data = [
             }
         ]
     }
-]
+}

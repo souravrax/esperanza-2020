@@ -1,126 +1,75 @@
-const popUp = document.querySelector("#pop-up");
+function getById(id) {
+    return document.getElementById(id);
+}
+
+function hidePopUp() {
+    ytbVideo.src = "";
+    popUp.classList.add("hide");
+    document.body.style.overflowY = "scroll";
+}
+
+const popUp = getById("pop-up");
 
 /*-----------------Pop Up configuration Starts-----------------*/
 
-const contestName = document.getElementById("contest-name");
-const contestBody = document.getElementById("contest-body-container");
-const contestDescription = document.getElementById("contest-description");
-const structure = document.getElementById("structure");
-const videoContainer = document.getElementById("video");
-const prizeMoney = document.getElementById("moneyPrize");
-const pm = document.getElementById("prize-money");
-const rules = document.getElementById("rules");
-const registerButton = document.querySelector(".register-button");
+var btnRegister = getById("btnRegister");
+var txtEventName = getById("eventName");
+var txtPrizeMoney = getById("prize-money");
+var txtEntryFee = getById("fee");
+var ytbVideo = getById("ytbVideo");
+var description = getById("description");
+var structure = getById("structure");
+var rules = getById("rules");
+var olContact = getById("contact");
 
 /*-----------------Pop Up configuration Ends-----------------*/
 
-var toBeRemovedLaterElement = null;
-
-const showPopUp = (e) => {
-    data.forEach(elem => {
-        console.log(elem.eventName);
-        if (e.target.innerHTML == elem.eventName) {
-            pm.classList.remove("hide");
-            contestBody.classList.remove("hide");
-            fillPopUp(elem);
-            toBeRemovedLaterElement = elem;
-        }
-    })
+function showPopUp(e) {
     document.body.style.overflowY = "hidden";
-    popUp.classList.toggle("hide");
-}
+    var obj = data[e.target.value.toLowerCase()];
 
-const hidePopUp = () => {
-    popUp.classList.toggle("hide");
-    prizeMoney.removeChild(prizeMoney.firstChild);
-    contestName.removeChild(contestName.firstChild);
-    contestDescription.removeChild(contestDescription.firstChild);
-    structure.removeChild(structure.lastChild);
-    rules.removeChild(rules.lastChild);
-    if (toBeRemovedLaterElement.eventStructure != undefined) {
-        toBeRemovedLaterElement.eventStructure.forEach(elem => {
-            structure.removeChild(structure.lastChild);
-        })
+    if (obj.rules == undefined) {
+        obj.rules = ["Will be updated soon"];
     }
-    toBeRemovedLaterElement.rules.forEach(elem => {
-        rules.removeChild(rules.lastChild);
+    if (obj.eventStructure == undefined) {
+        obj.eventStructure = ["Will be updated soon"];
+    }
+
+
+    txtEventName.innerText = e.target.innerText;
+    description.innerText = obj.description;
+    ytbVideo.src = obj.videoURL;
+    var structureHTML = "";
+    var rulesHTML = "";
+    obj.eventStructure.forEach(elem => {
+        structureHTML += "<li>" + elem + "</li>";
+    })
+    obj.rules.forEach(elem => {
+        rulesHTML += "<li>" + elem + "</li>";
+    })
+    
+    var contactHTML = "";
+    obj.contact.forEach(elem => {
+        contactHTML += `<li>
+            <h3 id="contact-name">${elem.name} : </h3>
+            <h3 id="contact-number">+91${elem.no}</h3>
+        </li>`
     })
 
-    /*################# Removing Video Element ################*/
 
-    let a = document.getElementById("video-player");
-    a.parentNode.removeChild(a);
-    structure.classList.remove("hide");
+    structure.innerHTML = structureHTML;
+    rules.innerHTML = rulesHTML;
+    txtPrizeMoney.innerText = obj.prizeMoney;
+    txtEntryFee.innerText = obj.entryFee;
+    btnRegister.value = obj.registerURL;
+    contact.innerHTML = contactHTML;
 
-    /*################# Hiding Unnecessary ################*/
+    btnRegister.addEventListener('click', _ => {
+        window.open(btnRegister.value);
+    })
 
-    pm.classList.add("hide");
-    contestBody.classList.add("hide");
-    document.body.style.overflowY = "scroll";
-
+    popUp.classList.remove("hide");
 }
 
 
-
-function fillPopUp(elem) {
-    contestName.appendChild(document.createTextNode(elem.eventName));
-    contestDescription.appendChild(document.createTextNode(elem.description));
-    prizeMoney.appendChild(document.createTextNode(elem.prizeMoney));
-
-
-    /*################# Adding Video Element ################*/
-
-    var video = document.createElement("video");
-    video.setAttribute("class", "video-js");
-    video.setAttribute("id", "video-player");
-    video.setAttribute("preload", "auto");
-    video.setAttribute("width", "50%");
-    video.setAttribute("height", "auto");
-    video.controls = true;
-    video.setAttribute("controlsList", "nodownload");
-    var source = document.createElement("source");
-    source.src = elem.videoURL;
-    source.type = "video/mp4";
-    source.setAttribute("id", "demo-video");
-    video.appendChild(source);
-    videoContainer.appendChild(video);
-
-
-
-    /*################# Forming the structure element ################*/
-
-    if (elem.eventStructure != undefined) {
-        var node = document.createElement('li');
-        var textNode = document.createTextNode(`Number of Rounds : ${elem.eventStructure.length}`);
-        node.appendChild(textNode);
-        node.style.fontWeight = 600;
-        node.style.listStyleType = "none";
-        node.style.color = "red";
-        structure.appendChild(node);
-        elem.eventStructure.forEach(element => {
-            var node = document.createElement('li');
-            var textNode = document.createTextNode(element);
-            node.appendChild(textNode);
-            structure.appendChild(node);
-        });
-        structure.classList.remove("hide");
-    }
-    else{
-        structure.classList.add("hide");
-    }
-
-    /*################# Forming the Rules and Regulation element ################*/
-    
-    elem.rules.forEach(element => {
-        var node = document.createElement('li');
-        var textNode = document.createTextNode(element);
-        node.appendChild(textNode);
-        rules.appendChild(node);
-    });
-    
-    
-    /*################# Register button ################*/
-
-    registerButton.href = elem.registerURL;
-}
-
+`<iframe width="1903" height="778" src="https://www.youtube.com/embed/2kMi6MfmGM8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`

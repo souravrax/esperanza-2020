@@ -23,110 +23,117 @@
             <div class="card animated jello">
                 <h1>Robotix</h1>
                 <div class="contests">
-                    <button onclick="showPopUp(event)" style="display: block;">Droidblitz</button>
-                    <button onclick="showPopUp(event)" style="display: block;">Robo Soccer</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="Droidblitz">Droidblitz</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="Robosoccer">Robo Soccer</button>
                 </div>
-                <a
-                    href="https://forms.gle/ESsFsocTBW2Jfevu8">Register</a>
+                <a href="https://forms.gle/ESsFsocTBW2Jfevu8">Register</a>
             </div>
             <div class="card animated jello">
                 <h1>CryptoHack</h1>
                 <div class="contests">
-                    <button onclick="showPopUp(event)" style="display: block;">Code404</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="Code404">Code404</button>
                 </div>
-                <a
-                    href="#">Register</a>
+                <a href="#">Register</a>
             </div>
             <div class="card animated jello">
                 <h1>Mechanize</h1>
                 <div class="contests">
-                    <button onclick="showPopUp(event)" style="display: block;">Sand Rover</button>
-                    <button onclick="showPopUp(event)" style="display: block;">Arm of Achelous</button>
-                    <button onclick="showPopUp(event)" style="display: block;">Cad-O-Mania</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="SandRover">Sand Rover</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="ArmOfAchelous">Arm of Achelous</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="Cad-O-Mania">Cad-O-Mania</button>
                 </div>
-                <a
-                    href="https://forms.gle/ESsFsocTBW2Jfevu8">Register</a>
+                <a href="https://forms.gle/ESsFsocTBW2Jfevu8">Register</a>
             </div>
             <div class="card animated jello">
                 <h1>Quizard</h1>
                 <div class="contests">
-                    <button onclick="showPopUp(event)" style="display: block;">Tech Quiz</button>
-                    <button onclick="showPopUp(event)" style="display: block;">Math Olympiad</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="TechQuiz">Tech Quiz</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="MathOlympiad">Math Olympiad</button>
                 </div>
-                <a
-                    href="https://forms.gle/ESsFsocTBW2Jfevu8">Register</a>
+                <a href="https://forms.gle/ESsFsocTBW2Jfevu8">Register</a>
             </div>
             <div class="card animated jello">
                 <h1>Exhibitions</h1>
                 <div class="contests">
-                    <button onclick="showPopUp(event)" style="display: block;">Technical Projects</button>
-                    <button onclick="showPopUp(event)" style="display: block;">Photography</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="TechnicalProjects">Technical Projects</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="Photography">Photography</button>
                 </div>
-                <a
-                    href="https://forms.gle/ESsFsocTBW2Jfevu8">Register</a>
+                <a href="https://forms.gle/ESsFsocTBW2Jfevu8">Register</a>
             </div>
             <div class="card animated jello">
                 <h1>Gamathon</h1>
                 <div class="contests">
-                    <button onclick="showPopUp(event)" style="display: block;">PUBG Mobile</button>
-                    <button onclick="showPopUp(event)" style="display: block;">Free Fire</button>
-                    <button onclick="showPopUp(event)" style="display: block;">Mini Militia</button>
-                    <button onclick="showPopUp(event)" style="display: block;">PES</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="PUBG">PUBG Mobile</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="FreeFire">Free Fire</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="MiniMilitia">Mini Militia</button>
+                    <button onclick="showPopUp(event)" style="display: block;" value="PES">PES</button>
                 </div>
-                <a
-                    href="#">Register</a>
+                <a href="#">Register</a>
             </div>
         </div>
     </header>
 
 
     <section class="pop-up hide animated bounceInLeft" id="pop-up">
-        <button id="go-back" onclick="hidePopUp()"><i class="fa fa-arrow-left"></i>Go back</button>
+    <!-- <section class="pop-up" id="pop-up"> -->
+        <div class="button-container">
+            <button id="go-back" onclick="hidePopUp()"><i class="fa fa-arrow-left"></i>Go back</button>
+            <button id="btnRegister" value="#">Register<i class=" fa fa-arrow-right"></i></button>
+        </div>
         <div class="model-container">
-            <h1 id="contest-name"></h1>
-            <h3 class="hide" id="prize-money">Prize Money : Rs. <span class="money animated flash infinite" id="moneyPrize"></span></h3>
-            <div class="hide" id="contest-body-container">
-                <p id="contest-description"></p>
-                <br>
-                <div id="structure" class="hide">
-                    <h3 id="structure-text" class="up-down-border">Structure</h3>
-                    <!-- <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi
-                         nesciunt aperiam ea aliquam quibusdam voluptatum placeat perspiciatis? Ea, 
-                         magni incidunt corrupti assumenda cupiditate deleniti tenetur eos modi vero sequi?
-                        </li> -->
+            <div class="event-heading">
+                <h1 class="event-name" id="eventName">Event name</h1>
+                <h3 class="event-prize-money">Prize Money : <span
+                        class="animated flash infinite" id="prize-money">5000</span></h3>
+                <p class="event-entry-fee">Entry Fee : <span id="fee">30</span></p>
+            </div>
+
+            <div class="body-div event-body">
+                <div class="body-div video">
+                    <iframe id="ytbVideo" height="315" src="https://www.youtube-nocookie.com/embed/1U1RHWBUoRY?controls=0"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-
-
-                <!-- video -->
-
-
-
-                <div class="video" id="video">
-                    <h3 id="video-text" class="up-down-border">Demo Video</h3>
-                    <!-- <video id="video" class="video-js" controls preload="auto" controlsList="nodownload" width="50%" height="auto" data-setup="{}">
-                        <source src="/videos/background-video.mp4" id="demo-video" type="video/mp4" />
-                    </video> -->
+                <div class="body-div description">
+                    <h1>Description</h1>
+                    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ex maiores nemo ad distinctio
+                        reprehenderit corrupti optio amet debitis, praesentium molestiae dolorum laborum adipisci itaque
+                        blanditiis necessitatibus, accusamus ipsam beatae.</p>
                 </div>
-
-
-
-                <!-- video -->
-
-
-
-
-                <div id="rules" class="">
-                    <h3 id="rules-text" class="up-down-border">Rules and Regulation</h3>
-                    <!-- <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at numquam quam totam cumque quasi
-                        deserunt, quos nam! Adipisci aliquid nulla, reiciendis aperiam aspernatur animi aliquam porro.
-                        Consectetur, laboriosam alias.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at numquam quam totam cumque quasi
-                        deserunt, quos nam! Adipisci aliquid nulla, reiciendis aperiam aspernatur animi aliquam porro.
-                        Consectetur, laboriosam alias.</li> -->
+                <div class="body-div structure">
+                    <h1>Event Structure</h1>
+                    <ul id="structure">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, consequuntur! </li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, consequuntur! </li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, consequuntur! </li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, consequuntur! </li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, consequuntur! </li>
+                    </ul>
                 </div>
-
-                <a href="" target="_blank" class="register-button up-down-border">Register</a>
-
+                <div class="body-div rules">
+                    <h1>Rules</h1>
+                    <ol id="rules">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, consequuntur! </li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, consequuntur! </li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, consequuntur! </li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, consequuntur! </li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, consequuntur! </li>
+                    </ol>
+                </div>
+                <div class="body-div contact">
+                    <h1>Contact</h1>
+                    <ol id="contact">
+                        <li>
+                            <h3 id="contact-name">Name : <span id="cname"></span></h3>
+                            <h3 id="contact-number">Number</h3>
+                        </li>
+                        <li>
+                            <h3 id="contact-name">Name : </h3>
+                            <h3 id="contact-number">Number</h3>
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
     </section>
@@ -143,3 +150,61 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<h1 id="contest-name"></h1>
+            <h3 class="hide" id="prize-money">Prize Money : Rs. <span class="money animated flash infinite" id="moneyPrize"></span></h3>
+            <div class="hide" id="contest-body-container">
+                <p id="contest-description"></p>
+                <br>
+                <div id="structure" class="hide">
+                    <h3 id="structure-text" class="up-down-border">Structure</h3>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi
+                         nesciunt aperiam ea aliquam quibusdam voluptatum placeat perspiciatis? Ea, 
+                         magni incidunt corrupti assumenda cupiditate deleniti tenetur eos modi vero sequi?
+                        </li>
+                </div>
+
+
+
+
+
+                <div class="video" id="video">
+                    <h3 id="video-text" class="up-down-border">Demo Video</h3>
+                     <video id="video" class="video-js" controls preload="auto" controlsList="nodownload" width="50%" height="auto" data-setup="{}">
+                        <source src="/videos/background-video.mp4" id="demo-video" type="video/mp4" />
+                    </video>
+                </div>
+
+
+
+                 video
+
+
+
+
+                <div id="rules" class="">
+                    <h3 id="rules-text" class="up-down-border">Rules and Regulation</h3>
+                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at numquam quam totam cumque quasi
+                        deserunt, quos nam! Adipisci aliquid nulla, reiciendis aperiam aspernatur animi aliquam porro.
+                        Consectetur, laboriosam alias.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at numquam quam totam cumque quasi
+                        deserunt, quos nam! Adipisci aliquid nulla, reiciendis aperiam aspernatur animi aliquam porro.
+                        Consectetur, laboriosam alias.</li>
+                </div>
+
+                <a href="" target="_blank" class="register-button up-down-border">Register</a>
+
+            </div> -->
