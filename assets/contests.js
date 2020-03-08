@@ -212,7 +212,7 @@ const data = {
         description:
             "World of designing is running more <br>than the speed of light. Now it’s time to express your<br>imagination power. Here<br><b>“Cad-O-Mania”</b> is challenging your<br>designing brilliance.  Now the battle<br>has begun so challenge your mind.<br>If you are mad for cad so get<br>armed up with all your design<br>weapons and tricks in this war of<br>designing",
         videoURL: "https://www.youtube.com/embed/f9qsR_Y5Tg4",
-        prizeMoney: "10,000/-",
+        // prizeMoney: "10,000/-",
         rules: [
             "Maximum 2 participant per team.",
             "The team has to choose software i.e. AUTOCAD (any version) or any software.",
