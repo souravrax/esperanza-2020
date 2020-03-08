@@ -244,7 +244,7 @@ const data = {
     },
     techquiz :{
         description: "Quiz competition is a pursuit of trivial Knowledge, encouraging students to achieve academic excellence and Increase their awareness of the world around. With science and technology growing at such an alarming rate, facts and figures just keep adding up. To match the influx of this humongous amount of data we need a brain that's sharp as a razor and pliable as a rubber band. And the quest for the search of this perfect brain ends at technical quiz! With a wide array of questions from numerous technical topics, this is one event which will breach the boundaries of your technical lore.",
-        // videoURL: "#",
+        videoURL: "https://www.youtube.com/embed/2kMi6MfmGM8?modestbranding=1&autoplay=1&showinfo=0&controls=0",
         prizeMoney: 500,
         rules: [
             "A team shall consist of maximum of THREE students.",
