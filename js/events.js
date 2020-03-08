@@ -37,7 +37,7 @@ function showPopUp(e) {
 
 
     txtEventName.innerText = e.target.innerText;
-    description.innerText = obj.description;
+    description.innerHTML = obj.description;
     ytbVideo.src = obj.videoURL;
     var structureHTML = "";
     var rulesHTML = "";
@@ -71,5 +71,3 @@ function showPopUp(e) {
     popUp.classList.remove("hide");
 }
 
-
-`<iframe width="1903" height="778" src="https://www.youtube.com/embed/2kMi6MfmGM8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
