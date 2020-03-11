@@ -215,15 +215,15 @@ const data = {
         // prizeMoney: "10,000/-",
         rules: [
             "Maximum 2 participant per team.",
-            "The team has to choose software i.e. AUTOCAD (any version) or any software.",
+            "The team has to choose software i.e. AUTOCAD (any version) or any designing software.",
             "Model will be given at the time of competition.",
             "Use of Internet is restricted.",
             "Participants must carry their valid college ID card.",
-            "The decision of the committee will be final this will be judged on the basis of completeness and optimum time.",
-            " The Coordinator of event reserves the right to modify the contest rules without any prior notice.",
+            "The decision of the committee will be final.",
+            "This will be judged on the basis of completeness and optimum time.",
+            "The Coordinator of event reserves the right to modify the contest rules without any prior notice.",
             "Top 3 teams will be awarded with handsome prize apart from certification.",
-            "For any clarification or further details the interested candidates can conact student coordinators.",
-            "The decision of the judges will be final."
+            "For any clarification or further details the interested candidates may contact student coordinators.",
         ],
         registerURL: "https://forms.gle/ESsFsocTBW2Jfevu8",
         eventStructure: [
@@ -246,6 +246,17 @@ const data = {
         description: "Quiz competition is a pursuit of trivial Knowledge, encouraging students to achieve academic excellence and Increase their awareness of the world around. With science and technology growing at such an alarming rate, facts and figures just keep adding up. To match the influx of this humongous amount of data we need a brain that's sharp as a razor and pliable as a rubber band. And the quest for the search of this perfect brain ends at technical quiz! With a wide array of questions from numerous technical topics, this is one event which will breach the boundaries of your technical lore.",
         videoURL: "https://www.youtube.com/embed/2kMi6MfmGM8?modestbranding=1&autoplay=1&showinfo=0&controls=0",
         prizeMoney: 500,
+        eventStructure : [
+            "Each team will be consisting 2 members.",
+            `There will be two rounds 
+            <br>1. Preliminary
+            <br>2. Final`,
+            `In prelims there will be 25 questions (including 5 star questions - according to difficulty) , participants would be provided with papers to write down answers,
+            Then from them 8 teams will be qualified to the final rounds according to scores. (In case of tie, star questions would be taken under consideration as tie breaker ).  There will be no negative markings in prelims.
+            `,
+            `In finals there will be 4 more rounds . With infinite pounces ( pounce - when one team is questioned ,others will stand a chance to score here too. They'll write down there answers on papers given ,  if right will be awarded the same score , and if wrong there will be negative markings). ps- there will be No negative markings in case of direct questions . `,
+            `Rankings will be decided according to score . Prelim's score will not be taken into consideration in Finals ( only in case of tie it will be ).`
+        ],
         rules: [
             "A team shall consist of maximum of THREE students.",
             "The decision of the quiz-master will be final and will not be subjected to any change.",
@@ -261,6 +272,7 @@ const data = {
             }
         ]
 
-    }
+    },
+
 
 }
