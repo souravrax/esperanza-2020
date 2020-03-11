@@ -2,7 +2,7 @@ const data = {
     droidblitz: {
         description: "ESPERANZA, in association with the CGEC Student  presents Sandrover for the participants of ESPERANZA CHAPTER 3.Droid Blitz is a double-elimination event that requires participants to build wireless-remote controlled electric-powered robots that can be used to complete broken pathways and transfer packages by running on land as well as water terrains. Build an amphibious robot that can be used to perform tasks on land and water and traverse across uneven terrains.It’s the time to wake up “guess” in you.​",
         videoURL: "https://www.youtube.com/embed/1U1RHWBUoRY",
-        prizeMoney: 5000,
+        prizeMoney: "Rs. 5000/-",
         rules: [
             "You have to made this bot Wirelessly.",
             "Individual participants must be registered.",
@@ -34,7 +34,7 @@ const data = {
     robosoccer: {
         description: "This is the turning point in the soccer game. In the spirit of the old fashioned board games and by taking a step forward, we have exchanged the tabletop game for the team of robot players connected with an app on a durable soccer pitch. The goal is no different from a regular soccer match: to attack, defend, strategize, and score more goals than your opponent.",
         videoURL: "https://www.youtube.com/embed/6IXIIATWH0g",
-        prizeMoney: 5000,
+        prizeMoney: "Rs. 5000/-",
         rules: [
             "You have to made the bot wirelessly/wired as your wish ...",
             "We will provide you full training to make this type of bots ."
@@ -54,7 +54,7 @@ const data = {
     sandrover: {
         description: "ESPERANZA, in association with the CGEC Student  presents Sandrover for the participants of ESPERANZA CHAPTER 3. Sand Rover is the ultimate designing challenge for you to showcase your  technical skills. It’s the time to wake up “guess” in you. ",
         videoURL: "https://www.youtube.com/embed/h2phmdd1K8w",
-        prizeMoney: 5000,
+        prizeMoney: "Rs. 5000/-",
         rules: [
             "You have to make the bot Wireless.",
             "Participants must be individual",
@@ -86,7 +86,7 @@ const data = {
     armofachelous: {
         description: "ESPERANZA, in association with the CGEC Student  presents Sandrover for the participants of ESPERANZA CHAPTER 3. Sand Rover is the ultimate designing challenge for you to showcase your  technical skills. It’s the time to wake up “guess” in you. ",
         videoURL: "https://www.youtube.com/embed/VgQsJVhB4Lk",
-        prizeMoney: 5000,
+        prizeMoney: "Rs. 5000/-",
         rules: [
             "You have to make the bot Wireless.",
             "Participants must be individual",
@@ -119,7 +119,7 @@ const data = {
         eventName: "Laws of Motion",
         description: "ESPERANZA, in association with the CGEC Student  presents Laws of Motion for the participants of ESPERANZA CHAPTER 3. Laws 0f Motion is the ultimate designing challenge for you to showcase your  technical skills. It’s the time to wake up “guess” in you. ",
         videoURL: "https://www.youtube.com/embed/2kMi6MfmGM8?modestbranding=1&autoplay=1&showinfo=0&controls=0",
-        prizeMoney: "10,000/-",
+        prizeMoney: "Rs. 10,000/-",
         rules: [
             "You have to make the bot Wireless.",
             "Participants must be individual",
@@ -147,7 +147,7 @@ const data = {
     matholympiad: {
         description: "The contest aims to foster an interest in math and improve the mathematical skills of participants through solo competitions. Give your solution with extensive knowledge pertaining a problem.",
         videoURL: "https://www.youtube.com/embed/2kMi6MfmGM8?modestbranding=1&autoplay=1&showinfo=0&controls=0",
-        prizeMoney: "1,000/-",
+        prizeMoney: "Rs. 1,000/-",
         certificate: true,
         entryFee: 30,
         rules: [
@@ -183,7 +183,7 @@ const data = {
     code404: {
         description: "This programming contest is a great opportunity for students who would like to major in or currently majoring in computer science, computer engineering, management information systems, information technology, or any IT related subjects to demonstrate their skills in problem solving and programming. During the contest, contestants would be competing against each other and try to solve the maximum number of problems in the shortest period of time.",
         videoURL: "https://www.youtube.com/embed/snSLI0ZOMzw",
-        prizeMoney: 1000,
+        prizeMoney: "Rs. 1000/-",
         entryFee: "Free",
         rules: [
             "All participants will be given the same set of problems to solve.",
@@ -212,7 +212,7 @@ const data = {
         description:
             "World of designing is running more <br>than the speed of light. Now it’s time to express your<br>imagination power. Here<br><b>“Cad-O-Mania”</b> is challenging your<br>designing brilliance.  Now the battle<br>has begun so challenge your mind.<br>If you are mad for cad so get<br>armed up with all your design<br>weapons and tricks in this war of<br>designing",
         videoURL: "https://www.youtube.com/embed/f9qsR_Y5Tg4",
-        // prizeMoney: "10,000/-",
+        // prizeMoney: "Rs. 10,000/-",
         rules: [
             "Maximum 2 participant per team.",
             "The team has to choose software i.e. AUTOCAD (any version) or any designing software.",
@@ -244,8 +244,10 @@ const data = {
     },
     techquiz :{
         description: "Quiz competition is a pursuit of trivial Knowledge, encouraging students to achieve academic excellence and Increase their awareness of the world around. With science and technology growing at such an alarming rate, facts and figures just keep adding up. To match the influx of this humongous amount of data we need a brain that's sharp as a razor and pliable as a rubber band. And the quest for the search of this perfect brain ends at technical quiz! With a wide array of questions from numerous technical topics, this is one event which will breach the boundaries of your technical lore.",
-        videoURL: "https://www.youtube.com/embed/2kMi6MfmGM8?modestbranding=1&autoplay=1&showinfo=0&controls=0",
-        prizeMoney: 500,
+        videoURL: "../images/tech-event.jpg",
+        prizeMoney: "Participation certificate & memento",
+        entryFee : `20/- per Team ( for cgec students)
+        50/- per team (for others)`,
         eventStructure : [
             "Each team will be consisting 2 members.",
             `There will be two rounds 
@@ -269,6 +271,10 @@ const data = {
             {
                 name: "Souvik Dutta(CSE 3rd year )",
                 no: 9830973023
+            },
+            {
+                name: "Sayan Shaw(ECE 3rd year )",
+                no: 9804724233
             }
         ]
 
