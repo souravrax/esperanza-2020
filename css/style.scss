@@ -18,8 +18,7 @@ body {
   // cursor: none;
 }
 
-
-.hide{
+.hide {
   display: none !important;
 }
 
@@ -66,7 +65,7 @@ nav .links {
   }
 }
 
-.toggle-button{
+.toggle-button {
   display: none;
   cursor: pointer;
 }
@@ -218,8 +217,7 @@ footer {
   filter: contrast(1.3);
 }
 
-
-#cursor{
+#cursor {
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -233,7 +231,7 @@ footer {
   animation: rotate 5s linear infinite;
 }
 
-.imageDiv:hover + #cursor{
+.imageDiv:hover + #cursor {
   background-color: rgba(255, 255, 255, 0);
   border: 4px dashed white;
   width: 310px;
@@ -243,18 +241,18 @@ footer {
   // animation-delay: 0.3s;
 }
 
-@keyframes rotate{
-  0%{
+@keyframes rotate {
+  0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
-  100%{
+  100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
 /* --------- RESPONSIVE DESIGN -------- */
 @media screen and (max-width: 1000px) {
-  body{
+  body {
     overflow-x: hidden;
   }
 
@@ -299,7 +297,7 @@ footer {
     }
   }
 
-  .toggle-button{
+  .toggle-button {
     // transform: scale(5);
     display: block;
   }
@@ -311,44 +309,42 @@ footer {
     box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
   }
 
-
   /*----Header-----*/
-header {
-  margin: 50px 5% 0 5%;
-}
+  header {
+    margin: 50px 5% 0 5%;
+  }
 
-/*-----bodyContent-----*/
-.bodyContent {
-  margin-top: 10px;
-  border-radius: 50px;
-  // background-color: #55b9f3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  p {
-    margin-left: 50px;
-    width: 300px;
-    line-height: 40px;
-    margin-top: 60px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    span {
-      padding: 5px 10px;
-      border-radius: 50px;
-      background-color: black;
+  /*-----bodyContent-----*/
+  .bodyContent {
+    margin-top: 10px;
+    border-radius: 50px;
+    // background-color: #55b9f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin-left: 50px;
+      width: 300px;
+      line-height: 40px;
+      margin-top: 60px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      span {
+        padding: 5px 10px;
+        border-radius: 50px;
+        background-color: black;
+      }
+    }
+    .imageDiv {
+      height: 250px;
+      width: 250px;
+      background-image: url("/images/logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    h1 {
+      width: 350px;
     }
   }
-  .imageDiv {
-    height: 250px;
-    width: 250px;
-    background-image: url("/images/logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  h1{
-    width: 350px;
-    
-  }
-}
 }
