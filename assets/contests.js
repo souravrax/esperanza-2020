@@ -195,7 +195,7 @@ const data = {
             "Participants may not seek hints and/or ask for leads during the contest. They may, however, submit questions about procedure and/or clarification, in writing, to the Contest Committee who will ensure that all participants receive the same information as deemed necessary.",
             "The Contest Committee will tally the scores for each team and publish a complete list. The highest scores will be declared the winner. The Contest Committee's decision in all matters is final.",
         ],
-        registerURL: "#",
+        registerURL: "https://www.hackerrank.com/esperanza-code404",
         contact: [
             {
                 name: "Adhikram Maitra(CSE 3rd year )",
