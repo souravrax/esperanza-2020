@@ -348,3 +348,51 @@ footer {
     }
   }
 }
+
+
+/* ------------- COVID-19 -----------------*/
+
+.yet-to-be-published{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 999999999999999;
+  h3{
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    text-align: center;
+    span{
+      font-size: 0.8em;
+      font-weight: 200;
+    }
+  }
+  img{
+    margin-top: 50px;
+    height: 300px;
+    width: auto;
+    animation:30s rotate infinite linear;
+  }
+}
+
+body{
+  overflow-y: hidden;
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

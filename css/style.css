@@ -439,4 +439,65 @@ footer .footer-info .footer-right form button {
     width: 350px;
   }
 }
+
+/* ------------- COVID-19 -----------------*/
+.yet-to-be-published {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 999999999999999;
+}
+
+.yet-to-be-published h3 {
+  background-color: white;
+  color: black;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.yet-to-be-published h3 span {
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+.yet-to-be-published img {
+  margin-top: 50px;
+  height: 300px;
+  width: auto;
+  -webkit-animation: 30s rotate infinite linear;
+          animation: 30s rotate infinite linear;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 /*# sourceMappingURL=style.css.map */
