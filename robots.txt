@@ -1,4 +1,4 @@
-user-agent: *
+User-agent: *
 Disallow: /README.md
 Disallow: /.gitignore
 Disallow: /assets/
