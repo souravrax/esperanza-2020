@@ -1,3 +1,5 @@
+# Notice: Crawling this site is prohibited unless you have permission
+
 User-agent: *
 Disallow: /README.md
 Disallow: /.gitignore
