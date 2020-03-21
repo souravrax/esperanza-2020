@@ -1,0 +1,6 @@
+user-agent: *
+Disallow: /README.md
+Disallow: /.gitignore
+Disallow: /assets/
+Disallow: /images/
+Disallow: /videos/
